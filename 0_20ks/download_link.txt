@@ -1,0 +1,2 @@
+  lalmap: "https://gracedb.ligo.org/api/superevents/S190814bv/files/LALInference.v1.fits.gz"
+  multiorder: "https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/GW190814_PublicationSamples.multiorder.fits,0"

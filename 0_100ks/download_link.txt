@@ -1,0 +1,2 @@
+"https://gracedb.ligo.org/api/superevents/S190425z/files/LALInference.fits.gz,0"
+"https://gracedb.ligo.org/api/superevents/S190425z/files/GW190425_PublicationSamples.multiorder.fits,0"

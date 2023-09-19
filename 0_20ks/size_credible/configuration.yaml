@@ -1,0 +1,34 @@
+GWevent:
+  lalmap: "https://gracedb.ligo.org/api/superevents/S190425z/files/LALInference.fits.gz,0"
+  multiorder: "https://gracedb.ligo.org/api/superevents/S190425z/files/GW190425_PublicationSamples.multiorder.fits,0"
+  datalength: 100000 #100ks #total length of data to be downloaded after GW trigger (s)
+  timeb4trigger: 0 #How long before trigger do you want to download data (s)
+  downloadroi: 12 #radius while downloading data (degree)
+  GWgridsize: '0.5' #Size of grid to look for GeV photons in 90% credible GW patch (degree)
+source:
+  triggertime: tt
+  RA: '5'
+  DEC: dec
+selections:
+  rad: '8'
+  irf: p8_transient010e
+  zmax: '100'
+  emin: '100'
+  emax: '100000'
+  skybinsize: '0.2'
+  thetamax: '70.0'
+  strategy: time
+  roicut: 'False'
+model:
+  particlemodel: isotr template
+  galacticmodel: template (fixed norm.)
+  sourcemodel: PowerLaw2
+  fglmode: complete
+likelihood:
+  tsmin: '20'
+  optimizeposition: 'no'
+  spectralfiles: 'yes'
+  liketype: unbinned
+  clul: '0.95'
+  flemin: '100'
+  flemax: '1000'
